@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_toRightOf="@id/photoImageView"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:allowUndo="false"
+        android:textSize="15sp"
+        android:textColor="#ff000000" />
+    <TextView
+        android:id="@+id/unTextView"
+        android:layout_toRightOf="@id/photoImageView"
+        android:layout_below="@id/nameTextView"
+        android:text="0 un"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="95.0dp" />
+    <TextView
+        android:id="@+id/departmentTextView"
+        android:layout_toRightOf="@id/photoImageView"
+        android:layout_below="@id/unTextView"
+        android:text="Price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="10sp"
+        android:textColor="#ff000000" />
+    <ImageButton
+        android:id="@+id/btnPlus"
+        android:src="@drawable/plus"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/departmentTextView"
+        android:layout_below="@id/unTextView"
+        android:layout_marginLeft="30dp" />
+    <ImageButton
+        android:id="@+id/btnLess"
+        android:src="@drawable/less"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnPlus"
+        android:layout_below="@id/unTextView"
+        android:paddingLeft="10dp" />
+</RelativeLayout>

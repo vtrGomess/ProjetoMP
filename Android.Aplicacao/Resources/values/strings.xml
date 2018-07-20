@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Android.Aplicacao</string>
+  <string name="action_settings">Settings</string>
+  <string name="menuItem1">Todas as categorias</string>
+  <string name="menuItem2">Cine e Foto</string>
+  <string name="menuItem3">Eletrodomesticos</string>
+  <string name="menuItem4">Informática</string>
+  <string name="menuItem5">Telefones e Celulares</string>
+  <string name="menuItem6">TVs e Acessórios</string>
+</resources>
